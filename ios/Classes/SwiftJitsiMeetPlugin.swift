@@ -24,7 +24,10 @@ public class SwiftJitsiMeetPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
         let instance = SwiftJitsiMeetPlugin(uiViewController: viewController)
         
         registrar.addMethodCallDelegate(instance, channel: channel)
-        
+        registrar.register(
+          JitsiMeetFactory(registrar: registrar),
+          withId: "surfstudio/jitsi_meet"
+        )
         // Set up event channel for conference events
         let eventChannelName = "jitsi_meet_events"
         

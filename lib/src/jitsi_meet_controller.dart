@@ -16,7 +16,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
 /// Callback controller created
-typedef JitsiMeetViewCreatedCallback = void Function(JitsiMeetController);
+typedef JitsiMeetViewCreatedCallback = void Function(JitsiMeetController2);
 
 /// Channels and methods names
 const String channelName = 'surf_jitsi_meet_';
@@ -42,8 +42,8 @@ const String flagVariable = 'flag';
 const String flagValueVariable = 'flag_value';
 
 /// Controller for JitsiMeetWidget
-class JitsiMeetController {
-  JitsiMeetController.init(
+class JitsiMeetController2 {
+  JitsiMeetController2.init(
     int id,
     this.onWillJoin,
     this.onJoined,

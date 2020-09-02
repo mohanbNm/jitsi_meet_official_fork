@@ -72,7 +72,7 @@ class _JitsiMeetWidgetState extends State<JitsiMeetWidget> {
 
   void _onPlatformViewCreated(int id) {
     widget.onControllerCreated?.call(
-      JitsiMeetController.init(
+      JitsiMeetController2.init(
         id,
         widget.onWillJoin,
         widget.onJoined,
