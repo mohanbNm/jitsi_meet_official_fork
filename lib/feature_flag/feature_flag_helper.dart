@@ -1,7 +1,7 @@
 import 'feature_flag_enum.dart';
 
 /// Helper containing the associative map with feature flags and their string values.
-/// Reflects the official list of Jitsi Meet SDK 2.9.0 feature flags
+/// Reflects the official list of Jitsi Meet SDK 2.10.2 feature flags
 /// https://github.com/jitsi/jitsi-meet/blob/master/react/features/base/flags/constants.js
 class FeatureFlagHelper {
   static Map<FeatureFlagEnum, String> featureFlags = {

@@ -1,5 +1,5 @@
 /// Enumeration of all available feature flags
-/// Reflects the official list of Jitsi Meet SDK 2.9.0 feature flags
+/// Reflects the official list of Jitsi Meet SDK 2.10.2 feature flags
 /// https://github.com/jitsi/jitsi-meet/blob/master/react/features/base/flags/constants.js
 enum FeatureFlagEnum {
   /// Flag indicating if add-people functionality should be enabled.

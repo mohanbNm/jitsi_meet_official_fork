@@ -15,7 +15,7 @@
 
 
 ## 0.2.1
-* Updated JitsiMeet SDK to v2.9.0 
+* Updated JitsiMeet SDK to v2.10.2 
 
 ## 0.2.0
 * Added IOSAppBarRGBAColor Param
