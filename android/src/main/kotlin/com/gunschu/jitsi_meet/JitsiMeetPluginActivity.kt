@@ -9,6 +9,7 @@ import android.util.Log
 import com.gunschu.jitsi_meet.JitsiMeetPlugin.Companion.JITSI_MEETING_CLOSE
 import com.gunschu.jitsi_meet.JitsiMeetPlugin.Companion.JITSI_PLUGIN_TAG
 import org.jitsi.meet.sdk.JitsiMeetActivity
+import org.jitsi.meet.sdk.JitsiMeetView
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions
 
 /**
@@ -34,7 +35,15 @@ class JitsiMeetPluginActivity : JitsiMeetActivity() {
 
         if (isInPictureInPictureMode == false && onStopCalled) {
             // Picture-in-Picture mode has been closed, we can (should !) end the call
-            getJitsiView().leave()
+            //getJitsiView().leave()
+            val view: JitsiMeetView = getJitsiView()
+
+            if (view != null) {
+                view.leave()
+            } else {
+                //android.util.Log.d("Jitsi view not available")
+             }
+
         }
     }
 
